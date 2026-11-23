@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Makazi — Smart Rental Property Management System</title>
+    <meta name="description" content="Offline browser prototype for Makazi Smart Rental Property Management System (Murang'a University of Technology SDLC coursework)." />
+    <meta property="og:title" content="Makazi — Smart Rental Property Management System" />
+    <meta property="og:description" content="Offline browser prototype for managing rental properties, units, tenants, leases, water meters, rent records, and maintenance." />
+    <meta property="og:type" content="website" />
+
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/forms.css" />
+    <link rel="stylesheet" href="css/tables.css" />
+    <link rel="stylesheet" href="css/print.css" media="print" />
+  </head>
+  <body>
+    <div id="app"></div>
+
+    <!-- Core layer -->
+    <script defer src="js/core/namespace.js"></script>
+    <script defer src="js/core/constants.js"></script>
+    <script defer src="js/core/utils.js"></script>
+    <script defer src="js/core/dates.js"></script>
+    <script defer src="js/core/money.js"></script>
+    <script defer src="js/core/ids.js"></script>
+    <script defer src="js/core/escape.js"></script>
+    <script defer src="js/core/events.js"></script>
+
+    <!-- Data layer -->
+    <script defer src="js/data/schema.js"></script>
+    <script defer src="js/data/sampleData.js"></script>
+    <script defer src="js/data/migrations.js"></script>
+    <script defer src="js/data/storage.js"></script>
+
+    <!-- Business rules layer -->
+    <script defer src="js/rules/unitRules.js"></script>
+    <script defer src="js/rules/leaseRules.js"></script>
+    <script defer src="js/rules/paymentRules.js"></script>
+    <script defer src="js/rules/waterRules.js"></script>
+    <script defer src="js/rules/depositRules.js"></script>
+    <script defer src="js/rules/maintenanceRules.js"></script>
+    <script defer src="js/rules/reportRules.js"></script>
+
+    <!-- Services layer -->
+    <script defer src="js/services/propertyService.js"></script>
+    <script defer src="js/services/unitService.js"></script>
+    <script defer src="js/services/tenantService.js"></script>
+    <script defer src="js/services/leaseService.js"></script>
+    <script defer src="js/services/waterService.js"></script>
+    <script defer src="js/services/paymentService.js"></script>
+    <script defer src="js/services/maintenanceService.js"></script>
+    <script defer src="js/services/dashboardService.js"></script>
+    <script defer src="js/services/reportService.js"></script>
+    <script defer src="js/services/exportService.js"></script>
+
+    <!-- UI components -->
+    <script defer src="js/ui/components/toast.js"></script>
+    <script defer src="js/ui/components/modal.js"></script>
+    <script defer src="js/ui/components/confirm.js"></script>
+    <script defer src="js/ui/components/badge.js"></script>
+    <script defer src="js/ui/components/statCard.js"></script>
+    <script defer src="js/ui/components/emptyState.js"></script>
+    <script defer src="js/ui/components/formField.js"></script>
+    <script defer src="js/ui/components/filterBar.js"></script>
+    <script defer src="js/ui/components/tabs.js"></script>
+    <script defer src="js/ui/components/table.js"></script>
+
+    <!-- UI views -->
+    <script defer src="js/ui/views/dashboardView.js"></script>
+    <script defer src="js/ui/views/propertiesView.js"></script>
+    <script defer src="js/ui/views/unitsView.js"></script>
+    <script defer src="js/ui/views/tenantsView.js"></script>
+    <script defer src="js/ui/views/leasesView.js"></script>
+    <script defer src="js/ui/views/rentView.js"></script>
+    <script defer src="js/ui/views/waterView.js"></script>
+    <script defer src="js/ui/views/maintenanceView.js"></script>
+    <script defer src="js/ui/views/reportsView.js"></script>
+    <script defer src="js/ui/views/dataLimitsView.js"></script>
+
+    <!-- UI shell, router & bootstrap -->
+    <script defer src="js/ui/layout.js"></script>
+    <script defer src="js/ui/router.js"></script>
+    <script defer src="js/ui/app.js"></script>
+  </body>
+</html>

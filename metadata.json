@@ -1,0 +1,6 @@
+{
+  "name": "Makazi — Smart Rental Property Management System",
+  "description": "Offline browser prototype for Makazi Smart Rental Property Management System (Murang'a University of Technology SDLC coursework).",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,35 @@
+✔ BR1: lease date validation rejects end before start and equal dates (3.489916ms)
+✔ BR2 & Extra: unit eligibility allows vacant and rejects occupied or under_renovation (0.449644ms)
+✔ BR6: lease term classification for 18, 24, and 36 months (0.465151ms)
+✔ BR5: deposit refund calculation and zero floor (0.32891ms)
+✔ BR4: duplicate payment reference detection trims whitespace and ignores case (0.462021ms)
+✔ Lease ending within 90 days check (85 days yes, 120 days no) (0.407203ms)
+✔ Water consumption calculation: 120 to 135 = 15 m3 (0.360252ms)
+✔ BR7: reading lower than previous is rejected (0.497474ms)
+✔ BR8: second reading in the same month for the same meter is detected (0.591384ms)
+✔ Water bill calculation with rate and fixed charge, plus BR9 combined invoice (0.687963ms)
+✔ MUWASCO payable and water margin calculation (0.33211ms)
+✔ Leak detection flags unusual consumption above double the 3-month average (0.314933ms)
+✔ BR10: duplicate MUWASCO reference detection is trimmed and case-insensitive (0.223282ms)
+✔ Creating a lease sets unit occupied and rejects second lease on same unit (16.858564ms)
+✔ Ending a lease frees the unit back to vacant (7.777121ms)
+✔ Duplicate payment reference is rejected (case-insensitive, trimmed) (6.919914ms)
+✔ Deleting a property or unit with linked leases is blocked with a clear message (7.115603ms)
+✔ Maintenance request creation and completion workflow (7.12766ms)
+✔ Water reading enforces BR7 (not lower than previous) and BR8 (one per meter per month) (9.355915ms)
+✔ Digital meter simulation creates readings and updates combined rent + water invoice (6.763487ms)
+✔ MUWASCO payment enforces BR10 unique reference and updates property balance (6.575478ms)
+✔ Properties span all 9 Murang'a Town areas and filter cleanly by area and search (14.605744ms)
+✔ Storage saves and loads store payloads cleanly (11.525122ms)
+✔ Storage reset restores synthetic Murang'a sample data (9.299817ms)
+✔ Corrupted JSON in storage falls back safely to sample data (2.890183ms)
+✔ Untouched legacy v1 sample store upgrades to 9 Murang'a area properties (2.171037ms)
+✔ Custom legacy v1 store preserves custom properties during v2 migration (0.450634ms)
+ℹ tests 27
+ℹ suites 0
+ℹ pass 27
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 484.247698

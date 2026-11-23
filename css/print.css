@@ -1,0 +1,53 @@
+@media print {
+  body {
+    background: #FFFFFF;
+    color: #000000;
+    font-size: 11pt;
+  }
+
+  .app-sidebar,
+  .page-actions,
+  .btn,
+  .filter-bar,
+  .tabs,
+  .modal-backdrop,
+  .toast-region,
+  .no-print {
+    display: none !important;
+  }
+
+  .app-shell {
+    display: block;
+  }
+
+  .page-header {
+    border-bottom: 2px solid #000000;
+    padding: 0 0 8pt 0;
+    margin-bottom: 12pt;
+  }
+
+  .page-content {
+    padding: 0;
+    max-width: 100%;
+    gap: 14pt;
+  }
+
+  .panel,
+  .stat-card {
+    border: 1px solid #CBD5E1;
+    break-inside: avoid;
+    page-break-inside: avoid;
+    padding: 10pt;
+  }
+
+  .table-wrap {
+    overflow: visible;
+    border: 1px solid #94A3B8;
+  }
+
+  .badge {
+    border: 1px solid #64748B;
+    background: #FFFFFF !important;
+    color: #000000 !important;
+  }
+}
